@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_peliculas"
+        android:icon="@drawable/ic_peliculas"
+        android:title="Películas"/>
+
+    <item
+        android:id="@+id/nav_alimentos"
+        android:icon="@drawable/ic_popcorn"
+        android:title="Alimentos"/>
+
+    <item
+        android:id="@+id/nav_club"
+        android:icon="@drawable/ic_club"
+        android:title="Club"/>
+
+    <item
+        android:id="@+id/nav_mis_compras"
+        android:icon="@drawable/ic_compras"
+        android:title="Mis Compras"/>
+
+    <item
+        android:id="@+id/nav_mas"
+        android:icon="@drawable/ic_mas"
+        android:title="Más"/>
+
+</menu>

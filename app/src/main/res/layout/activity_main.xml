@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivNotificacion"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_notificaciones"
+            android:layout_marginEnd="56dp"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvCartelera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartelera"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="16dp"/>
+
+        <TextView
+            android:id="@+id/tvHorarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horarios"
+            android:textColor="#8A8FA3"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <ImageView
+            android:id="@+id/ivPerfil"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/sh_btn_celeste"
+            android:layout_marginStart="56dp"
+            android:tint="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCineUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/llHeader">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_direccion"
+            android:tint="@color/white"
+            android:padding="4dp"
+            android:background="@drawable/sh_btn_celeste"/>
+
+        <TextView
+            android:id="@+id/tvCineSeleccionado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cine"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/sh_btn_celeste"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src=""/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:background="@color/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/bottom_nav_colors"
+        app:itemTextColor="@color/bottom_nav_colors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
